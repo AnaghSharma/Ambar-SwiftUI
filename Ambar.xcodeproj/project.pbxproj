@@ -14,6 +14,7 @@
 		A70B623E237AF87700A2BA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70B623C237AF87700A2BA73 /* Main.storyboard */; };
 		A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B624B237B003900A2BA73 /* StatusBarController.swift */; };
 		A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B624F237B022700A2BA73 /* MainViewController.swift */; };
+		A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6251237B078200A2BA73 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A70B6240237AF87700A2BA73 /* Ambar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ambar.entitlements; sourceTree = "<group>"; };
 		A70B624B237B003900A2BA73 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		A70B624F237B022700A2BA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A70B6251237B078200A2BA73 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A70B624B237B003900A2BA73 /* StatusBarController.swift */,
+				A70B6251237B078200A2BA73 /* EventMonitor.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
+				A70B6252237B078200A2BA73 /* EventMonitor.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
 				A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */,
