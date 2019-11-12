@@ -12,6 +12,7 @@
 		A70B6238237AF87700A2BA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B6237237AF87700A2BA73 /* Assets.xcassets */; };
 		A70B623B237AF87700A2BA73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B623A237AF87700A2BA73 /* Preview Assets.xcassets */; };
 		A70B623E237AF87700A2BA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70B623C237AF87700A2BA73 /* Main.storyboard */; };
+		A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B624B237B003900A2BA73 /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A70B623D237AF87700A2BA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A70B623F237AF87700A2BA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A70B6240237AF87700A2BA73 /* Ambar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ambar.entitlements; sourceTree = "<group>"; };
+		A70B624B237B003900A2BA73 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				A70B6233237AF87000A2BA73 /* AppDelegate.swift */,
 				A70B6235237AF87000A2BA73 /* ContentView.swift */,
+				A70B6249237B000700A2BA73 /* Helpers */,
 				A70B6237237AF87700A2BA73 /* Assets.xcassets */,
 				A70B623C237AF87700A2BA73 /* Main.storyboard */,
 				A70B623F237AF87700A2BA73 /* Info.plist */,
@@ -72,6 +75,14 @@
 				A70B623A237AF87700A2BA73 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A70B6249237B000700A2BA73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A70B624B237B003900A2BA73 /* StatusBarController.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
+				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
