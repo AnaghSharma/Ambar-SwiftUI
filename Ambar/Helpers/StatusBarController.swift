@@ -23,7 +23,7 @@ class StatusBarController
         self.popover = popover
         
         statusBarButton.image = #imageLiteral(resourceName: "StatusBarIcon")
-        statusBarButton.image?.size = NSSize(width: 24.0, height: 20.0)
+        statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)
         statusBarButton.image?.isTemplate = true
         
         statusBarButton.action = #selector(togglePopover(sender:))
