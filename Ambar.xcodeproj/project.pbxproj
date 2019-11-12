@@ -13,6 +13,7 @@
 		A70B623B237AF87700A2BA73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B623A237AF87700A2BA73 /* Preview Assets.xcassets */; };
 		A70B623E237AF87700A2BA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70B623C237AF87700A2BA73 /* Main.storyboard */; };
 		A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B624B237B003900A2BA73 /* StatusBarController.swift */; };
+		A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B624F237B022700A2BA73 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A70B623F237AF87700A2BA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A70B6240237AF87700A2BA73 /* Ambar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ambar.entitlements; sourceTree = "<group>"; };
 		A70B624B237B003900A2BA73 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		A70B624F237B022700A2BA73 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A70B6249237B000700A2BA73 /* Helpers */,
 				A70B6237237AF87700A2BA73 /* Assets.xcassets */,
 				A70B623C237AF87700A2BA73 /* Main.storyboard */,
+				A70B624F237B022700A2BA73 /* MainViewController.swift */,
 				A70B623F237AF87700A2BA73 /* Info.plist */,
 				A70B6240237AF87700A2BA73 /* Ambar.entitlements */,
 				A70B6239237AF87700A2BA73 /* Preview Content */,
@@ -159,6 +162,7 @@
 				A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */,
 				A70B624C237B003900A2BA73 /* StatusBarController.swift in Sources */,
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
+				A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
