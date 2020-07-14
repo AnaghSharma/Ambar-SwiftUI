@@ -3,64 +3,58 @@
 //  Ambar
 //
 //  Created by Anagh Sharma on 12/11/19.
-//  Copyright © 2019 Golden Chopper. All rights reserved.
+//  Copyright © 2019 Anagh Sharma. All rights reserved.
 //
 
 import AppKit
 
-class StatusBarController
-{
+class StatusBarController {
     private var statusBar: NSStatusBar
     private var statusItem: NSStatusItem
     private var popover: NSPopover
-    private var statusBarButton: NSStatusBarButton
     private var eventMonitor: EventMonitor?
     
     init(_ popover: NSPopover)
     {
+        self.popover = popover
         statusBar = NSStatusBar.init()
         statusItem = statusBar.statusItem(withLength: 28.0)
-        statusBarButton = statusItem.button!
-        self.popover = popover
         
-        statusBarButton.image = #imageLiteral(resourceName: "StatusBarIcon")
-        statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)
-        statusBarButton.image?.isTemplate = true
-        
-        statusBarButton.action = #selector(togglePopover(sender:))
-        statusBarButton.target = self
+        if let statusBarButton = statusItem.button {
+            statusBarButton.image = #imageLiteral(resourceName: "StatusBarIcon")
+            statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)
+            statusBarButton.image?.isTemplate = true
+            
+            statusBarButton.action = #selector(togglePopover(sender:))
+            statusBarButton.target = self
+        }
         
         eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown], handler: mouseEventHandler)
     }
     
-    @objc func togglePopover(sender: AnyObject)
-    {
-        if(popover.isShown)
-        {
+    @objc func togglePopover(sender: AnyObject) {
+        if(popover.isShown) {
             hidePopover(sender)
         }
-        else
-        {
+        else {
             showPopover(sender)
         }
     }
     
-    func showPopover(_ sender: AnyObject)
-    {
-        popover.show(relativeTo: statusBarButton.bounds, of: statusBarButton, preferredEdge: NSRectEdge.maxY)
-        eventMonitor?.start()
+    func showPopover(_ sender: AnyObject) {
+        if let statusBarButton = statusItem.button {
+            popover.show(relativeTo: statusBarButton.bounds, of: statusBarButton, preferredEdge: NSRectEdge.maxY)
+            eventMonitor?.start()
+        }
     }
     
-    func hidePopover(_ sender: AnyObject)
-    {
+    func hidePopover(_ sender: AnyObject) {
         popover.performClose(sender)
         eventMonitor?.stop()
     }
     
-    func mouseEventHandler(_ event: NSEvent?)
-    {
-        if(popover.isShown)
-        {
+    func mouseEventHandler(_ event: NSEvent?) {
+        if(popover.isShown) {
             hidePopover(event!)
         }
     }

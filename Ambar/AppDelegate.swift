@@ -3,20 +3,18 @@
 //  Ambar
 //
 //  Created by Anagh Sharma on 12/11/19.
-//  Copyright © 2019 Golden Chopper. All rights reserved.
+//  Copyright © 2019 Anagh Sharma. All rights reserved.
 //
 
 import Cocoa
 import SwiftUI
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate
-{
+class AppDelegate: NSObject, NSApplicationDelegate {
     var popover = NSPopover.init()
     var statusBar: StatusBarController?
 
-    func applicationDidFinishLaunching(_ aNotification: Notification)
-    {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the contents
         let contentView = ContentView()
 
@@ -29,8 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
         statusBar = StatusBarController.init(popover)
     }
 
-    func applicationWillTerminate(_ aNotification: Notification)
-    {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 }
