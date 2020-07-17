@@ -7,6 +7,9 @@ Ambar is a macOS Menu Bar app built with SwiftUI. It is a template project which
 ## Why
 It is for the folks wanting to start developing macOS Catalina Menu Bar apps using SwiftUI.
 
+## How
+I have written a [detailed blog post](https://www.anaghsharma.com/blog/macos-menu-bar-app-with-swiftui/) explaining how to build a macOS menu bar app using SwiftUI.
+
 ## Requirements
 1. macOS Catalina 10.15
 2. Xcode 11
