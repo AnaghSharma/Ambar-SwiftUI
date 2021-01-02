@@ -14,6 +14,12 @@ I have written a [detailed blog post](https://www.anaghsharma.com/blog/macos-men
 1. macOS Catalina 10.15
 2. Xcode 11
 
+## Donate
+Buy me a coffee to support the development of this project.
+
+<a href="https://www.buymeacoffee.com/anagh"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=anagh&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff"></a>
+
+
 ## Contribute
 If you think this project can be improved, you are welcome to contribute. If you build something epic using it, do [let me know](https://twitter.com/AnaghSharma).
 
